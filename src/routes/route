@@ -1,0 +1,19 @@
+const express = require('express')
+
+const router = express.Router()
+
+const hospitalController = require("../controllers/hospitalController")
+const psychiatristController = require("../controllers/psychiatristController")
+const patientController = require("../controllers/patientController")
+
+//router.get("/test", (req,res)=> res.send("working fine"))
+
+router.post("/hospitals",hospitalController.createHospital)
+router.get("/hospitals",hospitalController.getHospital)
+
+router.post("/psychiatrists",psychiatristController.createPsychiatrist)
+
+router.post("/paitents",patientController.createPaitent)
+
+
+module.exports = router

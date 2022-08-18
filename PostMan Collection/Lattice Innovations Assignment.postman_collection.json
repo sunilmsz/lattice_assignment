@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "4f92ce67-a028-436f-ab55-ab17800e4e12",
+		"name": "Lattice Innovations Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20441131"
+	},
+	"item": [
+		{
+			"name": "Add hospital",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"AIIMS - All India Institute Of Medical Science\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/hospitals",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"hospitals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Paticular hospitals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/hospitals",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"hospitals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add psychiatrist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Ritesh Bansal",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "918547695874",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ritesh@xyz.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Ritesh@123",
+							"type": "text"
+						},
+						{
+							"key": "hospital_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/psychiatrists",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"psychiatrists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddPatient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "pankaj kumar",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "xyz street mohali punjab",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "918596645296",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "pankaj@xyz.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Pankaj@123",
+							"type": "text"
+						},
+						{
+							"key": "psychiatrist_id",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "/C:/Users/inpb9/OneDrive/Desktop/user.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/paitents",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"paitents"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
